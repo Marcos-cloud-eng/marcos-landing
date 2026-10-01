@@ -24,12 +24,12 @@ body {
       #090f1c 100%
     );
 
-  color: white;
+  color: #ffffff;
 
   min-height: 100vh;
 
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
   padding: 40px 0;
@@ -42,11 +42,11 @@ body {
 
 .container {
   width: 90%;
-  max-width: 620px;
+  max-width: 760px;
 
   text-align: center;
 
-  padding: 35px 20px;
+  padding: 20px 20px 45px;
 }
 
 
@@ -105,13 +105,14 @@ body {
   text-align: left;
 }
 
-
 .profile-info h1 {
   font-size: 2.6rem;
 
   font-weight: 700;
 
   margin-bottom: 8px;
+
+  color: #ffffff;
 }
 
 
@@ -159,7 +160,7 @@ body {
 
 
 /* =========================
-   LINKS
+   MAIN LINKS
 ========================= */
 
 .links {
@@ -191,7 +192,7 @@ body {
 
   text-decoration: none;
 
-  color: white;
+  color: #ffffff;
 
   background: rgba(255, 255, 255, 0.07);
 
@@ -208,17 +209,11 @@ body {
     box-shadow 0.25s ease;
 }
 
-
-/* ÍCONES */
-
 .btn i {
   font-size: 1.2rem;
 
   color: #38bdf8;
 }
-
-
-/* HOVER */
 
 .btn:hover {
   transform: translateY(-3px);
@@ -241,7 +236,7 @@ body {
 
   border-color: #0ea5e9;
 
-  color: white;
+  color: #ffffff;
 
   margin-top: 6px;
 
@@ -249,11 +244,9 @@ body {
     0 8px 25px rgba(14, 165, 233, 0.25);
 }
 
-
 .btn-contact i {
-  color: white;
+  color: #ffffff;
 }
-
 
 .btn-contact:hover {
   background: #38bdf8;
@@ -266,13 +259,195 @@ body {
 
 
 /* =========================
+   SERVICES
+========================= */
+
+.services {
+  margin-top: 58px;
+}
+
+.services h2 {
+  text-align: center;
+
+  font-size: 1.9rem;
+
+  margin-bottom: 28px;
+
+  color: #ffffff;
+}
+
+
+/* =========================
+   SERVICES GRID
+========================= */
+
+.services-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 16px;
+}
+
+
+/* =========================
+   SERVICE CARD
+========================= */
+
+.service-card {
+  text-align: left;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
+  border-radius: 16px;
+
+  padding: 22px;
+
+  min-height: 185px;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.12);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+
+  background: rgba(56, 189, 248, 0.09);
+
+  border-color: #38bdf8;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.25),
+    0 0 18px rgba(56, 189, 248, 0.08);
+}
+
+.service-card i {
+  display: inline-block;
+
+  font-size: 1.55rem;
+
+  color: #38bdf8;
+
+  margin-bottom: 14px;
+}
+
+.service-card h3 {
+  color: #ffffff;
+
+  font-size: 1.05rem;
+
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #94a3b8;
+
+  font-size: 0.88rem;
+
+  line-height: 1.55;
+}
+
+
+/* =========================
+   SERVICES CTA
+========================= */
+
+.services-cta {
+  margin-top: 22px;
+}
+
+
+/* =========================
+   SOCIAL LINKS
+========================= */
+
+.social-links {
+  margin-top: 45px;
+
+  text-align: center;
+}
+
+.social-links h2 {
+  color: #ffffff;
+
+  font-size: 1.25rem;
+
+  margin-bottom: 20px;
+}
+
+
+/* =========================
+   SOCIAL ROW
+========================= */
+
+.social-row {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 14px;
+}
+
+
+/* =========================
+   SOCIAL BUTTONS
+========================= */
+
+.social-row a {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.07);
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
+  color: #38bdf8;
+
+  font-size: 1.25rem;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.social-row a:hover {
+  transform: translateY(-3px);
+
+  background: rgba(56, 189, 248, 0.12);
+
+  border-color: #38bdf8;
+
+  box-shadow:
+    0 8px 20px rgba(56, 189, 248, 0.15);
+}
+
+
+/* =========================
    FOOTER
 ========================= */
 
 footer {
   margin-top: 40px;
 }
-
 
 .footer-main {
   color: #94a3b8;
@@ -281,7 +456,6 @@ footer {
 
   margin-bottom: 8px;
 }
-
 
 .footer-small {
   color: #475569;
@@ -300,13 +474,11 @@ footer {
     padding: 25px 0;
   }
 
-
   .container {
     width: 94%;
 
-    padding: 25px 16px;
+    padding: 20px 14px 35px;
   }
-
 
   .profile-header {
     flex-direction: column;
@@ -314,37 +486,30 @@ footer {
     gap: 14px;
   }
 
-
   .profile-info {
     text-align: center;
   }
-
 
   .profile-photo {
     width: 90px;
     height: 90px;
   }
 
-
   .profile-info h1 {
     font-size: 2.15rem;
   }
-
 
   .subtitle {
     font-size: 1rem;
   }
 
-
   .role {
     font-size: 0.82rem;
   }
 
-
   .description {
     font-size: 0.92rem;
   }
-
 
   .btn {
     padding: 16px 18px;
@@ -352,6 +517,21 @@ footer {
     font-size: 0.95rem;
   }
 
+  .services {
+    margin-top: 42px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    min-height: auto;
+  }
+
+  .social-links {
+    margin-top: 35px;
+  }
 
   footer {
     margin-top: 32px;
